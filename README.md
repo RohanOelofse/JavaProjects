@@ -1,2 +1,2 @@
 # JavaProjects
-<b>All Java Projects for csc160</b>
+<b>All Java Projects for CSC160</b>
