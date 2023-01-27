@@ -4,7 +4,7 @@ import java.util.Scanner;
  * 
 Description: First assignment
 Programmer Rohan Oelofse
-Date written: 2023.01.27
+Date written: 2023.01.26
 GitHub: https://github.com/RohanOelofse/JavaProjects
 
  *****************************************/
