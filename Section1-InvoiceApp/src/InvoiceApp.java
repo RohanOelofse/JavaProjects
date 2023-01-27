@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/******************************************
+/*******************************************
  * 
 Description: First assignment
 Programmer Rohan Oelofse
