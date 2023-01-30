@@ -26,7 +26,7 @@ public class InvoiceApp {
         String input = "?";
         
         // welcome the user to the program
-        System.out.println("Welcome to the Invoice Total Calculator");
+        System.out.println("Welcome to the Invoice Total Calculator V2");
         System.out.println();  // print a blank line
 
         // create a Scanner object named sc
