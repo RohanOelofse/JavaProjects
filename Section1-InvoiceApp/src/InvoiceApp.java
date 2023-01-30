@@ -18,21 +18,20 @@ public class InvoiceApp {
         double invoiceTotal = 0.0;
         double discountTotal = 0.0;
         double discountPercent = 0.0;
-        double subTotal = 0.0;
+        double subtotal = 0.0;
         double discountAmount = 0.0;
-        double total = 0.0;
+        double discountInvoiceTotal = 0.0;
         
         String choice = "y";
-        String input = "?";
         
-        // welcome the user to the program
-        System.out.println("Welcome to the Invoice Total Calculator V2");
-        System.out.println();  // print a blank line
-
-        // create a Scanner object named sc
+     // create a Scanner object named sc
         Scanner sc = new Scanner(System.in);
         
-        
+        // welcome the user to the program
+        System.out.println("==========================================");
+        System.out.println("Welcome to the Invoice Total Calculator V2");
+        System.out.println("==========================================");
+        System.out.println();  // print a blank line
 
         // perform invoice calculations until choice is "n" or "N" 
        
@@ -42,36 +41,38 @@ public class InvoiceApp {
             System.out.print("Enter the number of invoice line items:   ");
             lineItems = sc.nextInt();
         	
-        	for(int i = 0; i < lineItems; i++)
+        	for(int i = 1; i <= lineItems; i++)
         	{
-        		System.out.print("Enter line item amount:   ");
-                subTotal += sc.nextDouble();
+        		System.out.print("Enter line #" + i + " item amount:   ");
+                subtotal += sc.nextDouble();
         	}
            
 
             // calculate the discount amount and total
-            if (subTotal >= 500) {
+            if (subtotal >= 500) {
                 discountPercent = 0.25;
-            } else if (subTotal >= 200) {
+            } else if (subtotal >= 200) {
                 discountPercent = 0.2;
-            } else if (subTotal >= 100) {
+            } else if (subtotal >= 100) {
                 discountPercent = 0.1;
             } else {
                 discountPercent = 0.0;
             }
-            discountAmount = subTotal * discountPercent;
-            total = subTotal - discountAmount;
+            discountAmount = subtotal * discountPercent;
+            discountInvoiceTotal = subtotal - discountAmount;
             
             // accumulate the invoice count and invoice total
-            invoiceTotal = invoiceTotal + total;
+            invoiceTotal = invoiceTotal + discountInvoiceTotal;
             discountTotal = discountTotal + discountAmount;
             invoiceCount = invoiceCount + 1;  
 
             // display the discount amount and total
             String message = "Discount percent: " + discountPercent + "\n"
                            + "Discount amount:  " + discountAmount + "\n"
-                           + "Invoice total:    " + total + "\n";            
+                           + "Invoice total:    " + discountInvoiceTotal + "\n";            
             System.out.println(message);
+            
+            choice = sc.nextLine(); // clear the return char still in input buffer
 
             // see if the user wants to continue
             System.out.print("Continue? (y/n): ");
@@ -84,5 +85,7 @@ public class InvoiceApp {
                        + "Average invoice:    " + invoiceTotal / invoiceCount + "\n"
                        + "Average discount:   " + discountTotal / invoiceCount + "\n";
         System.out.println(message);
-    }
-}
+        
+        sc.close();
+    } // end of main
+} // end of class
