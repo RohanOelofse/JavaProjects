@@ -30,25 +30,27 @@ public class InvoiceApp {
         // welcome the user to the program
         System.out.println("==========================================");
         System.out.println("Welcome to the Invoice Total Calculator V2");
-        System.out.println("==========================================");
-        System.out.println();  // print a blank line
+          // print a blank line
 
         // perform invoice calculations until choice is "n" or "N" 
        
         while (!choice.equalsIgnoreCase("n")) {
         	
         	// get the invoice line items from the user
+        	System.out.println("==========================================");
+            System.out.println();
             System.out.print("Enter the number of invoice line items:   ");
             lineItems = sc.nextInt();
             System.out.println();  // print a blank line
             System.out.println("==========================================");
+            System.out.println();  // print a blank line
         	
         	for(int i = 1; i <= lineItems; i++)
         	{
         		System.out.print("Enter line #" + i + " item amount:   ");
                 subtotal += sc.nextDouble();
         	}
-           
+        	
 
             // calculate the discount amount and total
             if (subtotal >= 500) {
@@ -72,12 +74,13 @@ public class InvoiceApp {
             System.out.println();
             System.out.println("==========================================");
             System.out.println();
-            System.out.printf("%20s: %,10.2f\n", "Subtotal:", subtotal);
-            System.out.printf("%20s: %,10.2f\n", "Discount percent:", discountPercent);
-            System.out.printf("%20s: %,10.2f\n", "Discount amount:", discountAmount);
-            System.out.printf("%20s: %,10.2f\n", "Invoice total:", discountInvoiceTotal);
+            System.out.printf("%20s: %,10.2f\n", "Subtotal", subtotal);
+            System.out.printf("%20s: %,10.2f\n", "Discount percent", discountPercent);
+            System.out.printf("%20s: %,10.2f\n", "Discount amount", discountAmount);
+            System.out.printf("%20s: %,10.2f\n", "Invoice total", discountInvoiceTotal);
             System.out.println();
             System.out.println("==========================================");
+            System.out.println();
             
             choice = sc.nextLine(); // clear the return char still in input buffer
 
@@ -87,10 +90,7 @@ public class InvoiceApp {
             System.out.println();
         }
         
-        // calculate and display invoice count, average invoice, and average discount
-        System.out.printf("%20s: %,10.2f\n", "Number of invoices", invoiceCount);
-        System.out.printf("%20s: %,10.2f\n", "Average invoice:", invoiceTotal / invoiceCount);
-        System.out.printf("%20s: %,10.2f\n", "Average discount:", discountTotal / invoiceCount);
+        System.out.println("bye :(");
         
         sc.close();
     } // end of main
