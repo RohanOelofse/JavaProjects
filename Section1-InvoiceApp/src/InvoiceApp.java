@@ -69,6 +69,9 @@ public class InvoiceApp {
             invoiceCount = invoiceCount + 1;  
 
             // display the discount amount and total
+            System.out.println();
+            System.out.println("==========================================");
+            System.out.println();
             System.out.printf("%20s: %,10.2f\n", "Subtotal:", subtotal);
             System.out.printf("%20s: %,10.2f\n", "Discount percent:", discountPercent);
             System.out.printf("%20s: %,10.2f\n", "Discount amount:", discountAmount);
