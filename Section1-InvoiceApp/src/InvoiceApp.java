@@ -2,7 +2,10 @@ import java.util.Scanner;
 
 /*******************************************************
  
-Description: First assignment
+Description: This program asks the user to input the 
+			 number of invoices the proceeds to calculate the
+			 subtotal, discount percent, discount amount
+			  and invoice total.
 Programmer Rohan Oelofse
 Date written: 2023.01.26
 GitHub: https://github.com/RohanOelofse/JavaProjects
