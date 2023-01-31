@@ -40,6 +40,8 @@ public class InvoiceApp {
         	// get the invoice line items from the user
             System.out.print("Enter the number of invoice line items:   ");
             lineItems = sc.nextInt();
+            System.out.println();  // print a blank line
+            System.out.println("==========================================");
         	
         	for(int i = 1; i <= lineItems; i++)
         	{
@@ -67,10 +69,10 @@ public class InvoiceApp {
             invoiceCount = invoiceCount + 1;  
 
             // display the discount amount and total
-            String message = "Discount percent: " + discountPercent + "\n"
-                           + "Discount amount:  " + discountAmount + "\n"
-                           + "Invoice total:    " + discountInvoiceTotal + "\n";            
-            System.out.println(message);
+            System.out.printf("%20s: %,10.2f\n", "Subtotal:", subtotal);
+            System.out.printf("%20s: %,10.2f\n", "Discount percent:", discountPercent);
+            System.out.printf("%20s: %,10.2f\n", "Discount amount:", discountAmount);
+            System.out.printf("%20s: %,10.2f\n", "Invoice total:", discountInvoiceTotal);
             
             choice = sc.nextLine(); // clear the return char still in input buffer
 
