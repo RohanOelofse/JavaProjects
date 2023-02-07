@@ -31,7 +31,7 @@ public class InvoiceApp {
         Scanner sc = new Scanner(System.in);
         
         // welcome the user to the program
-        System.out.println("==========================================");
+        System.out.print("==========================================");
         System.out.println("Welcome to the Invoice Total Calculator V2");
           // print a blank line
 

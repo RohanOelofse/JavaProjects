@@ -1,0 +1,51 @@
+==========================================
+Welcome to the Invoice Total Calculator V2
+==========================================
+
+Enter the number of invoice line items:   3
+
+==========================================
+
+Enter line #1 item amount:   154.36
+Enter line #2 item amount:   124.35
+Enter line #3 item amount:   12.36
+
+==========================================
+
+            Subtotal:     291.07
+    Discount percent:       0.20
+     Discount amount:      58.21
+       Invoice total:     232.86
+
+==========================================
+
+Continue? (y/n): y
+
+==========================================
+
+Enter the number of invoice line items:   2
+
+==========================================
+
+Enter line #1 item amount:   14.36
+Enter line #2 item amount:   1002.35
+
+==========================================
+
+            Subtotal:   1,307.78
+    Discount percent:       0.25
+     Discount amount:     326.95
+       Invoice total:     980.84
+
+==========================================
+
+Continue? (y/n): n
+
+Bye :(
+
+
+
+Good, Bad, Ugly:
+
+I didn't struggle with the project itself but I wanted to keep the display of number of invoices and averages but I 
+could'nt resolve the errors I was getting when trying to print them using printf.
