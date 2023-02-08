@@ -31,7 +31,7 @@ public class InvoiceApp {
         Scanner sc = new Scanner(System.in);
         
         // welcome the user to the program
-        System.out.print("==========================================");
+        System.out.print("===============================================");
         System.out.println("Welcome to the Invoice Total Calculator V2");
           // print a blank line
 
@@ -40,12 +40,12 @@ public class InvoiceApp {
         while (!choice.equalsIgnoreCase("n")) {
         	
         	// get the invoice line items from the user
-        	System.out.println("==========================================");
+        	System.out.print("===============================================");
             System.out.println();
             System.out.print("Enter the number of invoice line items:   ");
             lineItems = sc.nextInt();
             System.out.println();  // print a blank line
-            System.out.println("==========================================");
+            System.out.print("===============================================");
             System.out.println();  // print a blank line
         	
         	for(int i = 1; i <= lineItems; i++)
@@ -75,14 +75,14 @@ public class InvoiceApp {
 
             // display the discount amount and total
             System.out.println();
-            System.out.println("==========================================");
+            System.out.print("===============================================");
             System.out.println();
             System.out.printf("%20s: %,10.2f\n", "Subtotal", subtotal);
             System.out.printf("%20s: %,10.2f\n", "Discount percent", discountPercent);
             System.out.printf("%20s: %,10.2f\n", "Discount amount", discountAmount);
             System.out.printf("%20s: %,10.2f\n", "Invoice total", discountInvoiceTotal);
             System.out.println();
-            System.out.println("==========================================");
+            System.out.print("===============================================");
             System.out.println();
             
             choice = sc.nextLine(); // clear the return char still in input buffer
