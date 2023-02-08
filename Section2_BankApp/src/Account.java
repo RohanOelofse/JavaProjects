@@ -2,7 +2,7 @@
 public class Account {
 	
 	// this is a class level field - all accounts share this field
-	public static int nextAccount = 0;
+	public static int lastNumber = 0;
 	
 	// instance level fields - unique per account
 	// each account object fields
@@ -15,7 +15,7 @@ public class Account {
 	public Account () {
 		System.out.println("Default constructor");
 		
-		this.number = ++Account.nextAccount;
+		this.number = ++Account.lastNumber;
 		this.balance = 0;
 		this.firstName = "Unknown";
 		this.lastName = "Unknown";

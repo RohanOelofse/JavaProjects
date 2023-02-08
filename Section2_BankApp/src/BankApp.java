@@ -25,7 +25,7 @@ public class BankApp {
 		BankApp.printAccount(account2);
 		
 		// Displaying class level field's value
-		System.out.println("Class level field lastNumber: " + Account.nextAccount);
+		System.out.println("Class level field lastNumber: " + Account.lastNumber);
 		
 	}
 
