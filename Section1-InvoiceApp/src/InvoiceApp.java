@@ -27,13 +27,13 @@ public class InvoiceApp {
         
         String choice = "y";
         
-     // create a Scanner object named sc
+        // create a Scanner object named sc
         Scanner sc = new Scanner(System.in);
         
         // welcome the user to the program
         System.out.print("===============================================");
         System.out.println("Welcome to the Invoice Total Calculator V2");
-          // print a blank line
+        // print a blank line
 
         // perform invoice calculations until choice is "n" or "N" 
         while (!choice.equalsIgnoreCase("n")) {
@@ -41,8 +41,10 @@ public class InvoiceApp {
         	// get the invoice line items from the user
         	System.out.print("===============================================");
             System.out.println();
+            
             System.out.print("Enter the number of invoice line items:   ");
             lineItems = sc.nextInt();
+            
             System.out.println();  // print a blank line
             System.out.print("===============================================");
             System.out.println();  // print a blank line
@@ -65,6 +67,7 @@ public class InvoiceApp {
             } else {
                 discountPercent = 0.0;
             }
+            
             discountAmount = subtotal * discountPercent;
             discountInvoiceTotal = subtotal - discountAmount;
             
