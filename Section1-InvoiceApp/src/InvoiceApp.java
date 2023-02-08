@@ -36,7 +36,6 @@ public class InvoiceApp {
           // print a blank line
 
         // perform invoice calculations until choice is "n" or "N" 
-       
         while (!choice.equalsIgnoreCase("n")) {
         	
         	// get the invoice line items from the user
@@ -48,6 +47,7 @@ public class InvoiceApp {
             System.out.print("===============================================");
             System.out.println();  // print a blank line
         	
+            //allow user to enter invoice line items
         	for(int i = 1; i <= lineItems; i++)
         	{
         		System.out.print("Enter line #" + i + " item amount:   ");
