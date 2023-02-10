@@ -11,6 +11,7 @@ public class BankApp {
 	public static void main(String[] args) {
 		
 		// Instantiate a new Account object using the default constructor
+		// object can also be called an instance variable or a reference variable
 		Account account1 = new Account(); // account1 is a reference variable
 		BankApp.printAccount(account1);
 
@@ -25,7 +26,7 @@ public class BankApp {
 		BankApp.printAccount(account2);
 		
 		// Displaying class level field's value
-		//System.out.println("Class level field lastNumber: " + Account.lastNumber);
+		System.out.println("Class level field lastNumber: " + Account.getLastNumber());
 		
 	}
 
