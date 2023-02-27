@@ -1,0 +1,35 @@
+=============================================
+|                High Low Game              |
+=============================================
+
+Game Rules:
+
+1)
+2)
+3)
+-----------------------------------------------
+
+Enter player one's name:
+
+Enter player two's name:
+==============================================
+Hello, I am the computer. I am thinking of a number between 1-100
+try to figure it out! :)
+
+(Player one's name), what is your guess? 50
+	Geez, you are freezing currently
+
+(Player two's name), what is your guess? 25
+	Ooo, you are getting warmer!
+
+(Player one's name), what is your guess? 10
+	Ding ding ding! You are correct!!
+
+Press enter to contiune...
+
+Would you like to play again? (Yes = y, No = n) n
+
+Player Stats
+Player name Highest number of guesses Lowest number of guesses
+Jack           5                                3
+Rohan          32                               1 
