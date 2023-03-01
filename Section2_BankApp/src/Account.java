@@ -24,7 +24,6 @@ public class Account {
 	private String firstName;
 	private String lastName;
 	
-	//
 	/**
 	 * default constructor that will return a unique account object 
 	 * Default constructor automatically assigns the next account number
