@@ -50,6 +50,7 @@ public class TrafficLight {
 	 */
 	public boolean isYellow() {
 		return yellow;
+		
 	}
 
 	/**
