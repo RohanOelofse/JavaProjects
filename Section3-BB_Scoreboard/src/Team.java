@@ -3,10 +3,19 @@ import java.util.List;
 
 public class Team {
 	
+	/**
+	 * The team's name.
+	 */
 	private String name;
 	
+	/**
+	 * Creates a list of player's on a team
+	 */
 	private List<Player> players;
-
+	
+	/**
+	 * Set the team's properties to default values
+	 */
 	public Team() {
 		
 		this.name = "Unknown";
@@ -14,19 +23,39 @@ public class Team {
 		
 	}
 	
+	/**
+	 * Allows creating a team by setting the team's name
+	 * @param name The team's name
+	 */
 	public Team(String name) {
 		this();
 		this.setName(name);
 	}
 	
+	/**
+	 * Get the teams name
+	 * @return The players name
+	 */
 	public String getName() {
 		return this.name;
 	}
 	
+	/**
+	 * Set the Team's name
+	 * @param name The Team's name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 	
+	/**
+	 * Add a player to the Team, by using the overload constructor that allows setting their name and jersey number too.
+	 * This method will verify that the jersey number is not already used by another player by calling the Team.getPlayer method.
+	 * and if it is, then it will throw an exception back to the calling method
+	 * @param name The player's name.
+	 * @param jersey The player's jersey number.
+	 * @throws Exception Jersey number # already assigned.
+	 */
 	public void addPlayer(String name, int jersey) throws Exception{
 		
 		Player dup = this.getPlayer(jersey);
@@ -39,6 +68,14 @@ public class Team {
 		}
 	}
 	
+	/**
+	 * Get a Player by their jersey number using the ArrayList.indexOf method
+	 * If the indexOf method returns -1 then this method returns null otherwise,
+	 * it returns the Player object associated with the jersey number.
+	 * @param jersey The player's jersey number.
+	 * @return If a player is found, it will return the Player object otherwise a null value.
+	 * @throws Exception Creating a player with a invalid jersey number could throw an error
+	 */
 	public Player getPlayer(int jersey) throws Exception{
 		
 		int index = this.players.indexOf(new Player(jersey));
@@ -52,6 +89,10 @@ public class Team {
 		}
 	}
 	
+	/**
+	 * Get the total number of points for the entire Team by calling the Player.getPoints method.
+	 * @return The teams's points.
+	 */
 	public int getTeamPoints() {
 		
 		int teamPoints = 0;
@@ -62,6 +103,10 @@ public class Team {
 		return teamPoints;
 	}
 	
+	/**
+	 * Get the total number of fouls for the entire Team using the Player.getFouls method.
+	 * @return The total number of fouls for the Team.
+	 */
 	public int getTeamFouls() {
 		
 		int teamFouls = 0;
@@ -71,6 +116,10 @@ public class Team {
 		return teamFouls;
 	}
 	
+	/**
+	 * Displays each Player's detail stats for the entire Team using the Player's getter methods.
+	 * This method uses the printf method for proper stats alignment.
+	 */
 	public void displayDetailStats() {
 		
 		System.out.printf("%2s   %8s   %2s   %2s   %2s   %2s   %2s  %n", "Jersey", "Name", "Fouls", "1pt", "2pt", "3pt", "Total");
@@ -94,6 +143,9 @@ public class Team {
 		System.out.println();
 	}
 	
+	/**
+	 * Display the Team's summary stats using the Team.getTeamFouls and getTeamPoints methods.
+	 */
 	public void displayTeamStats() {
 		
 		System.out.println("Team " + getName() + " Fouls = " + getTeamFouls() + " Points = " + getTeamPoints());
