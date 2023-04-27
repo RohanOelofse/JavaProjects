@@ -18,6 +18,7 @@
   <p></p>
   </li>
   <li>6. ZooKeeper App</br>
-  <p></p>
+  <p>This program allows the user to create different animals with specific characteristics and then allows the user to output each animal 
+  or a spesific property from the animal.</p>
   </li>
 </ul>
