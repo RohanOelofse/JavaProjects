@@ -68,13 +68,12 @@ public class JavaFXCalculator extends Application {
          case "\u221A":
              if(lastOperator != '=') {
             	 result = Double.parseDouble(inStr);
-            	 inStr = "0";
-            	 result = Math.sqrt(result);
-            	 inStr = result + "";
-            	 tfDisplay.setText(inStr);
-            	 lastOperator = '=';
-            	 compute();
              }
+        	 inStr = "0";
+        	 result = Math.sqrt(result);
+        	 inStr = result + "";
+        	 tfDisplay.setText(inStr);
+        	 lastOperator = '=';             
              break;
          case "^":
              compute();
@@ -89,14 +88,25 @@ public class JavaFXCalculator extends Application {
              memoryText.setText("Memory = " + memory);
              break;
          case "MR":
-        	 
+        	 inStr = String.valueOf(memory);
+        	 tfDisplay.setText(memory + "");
              break;
          case "MC":
         	 memory = 0.0;
              memoryText.setText("Memory = " + memory);
              break;
+         // Backspace button
          case "\u2190":
-             
+        	 if(inStr.length() == 1) {
+        		 inStr = "0";
+        		 tfDisplay.setText(inStr);
+        		 
+        	 }
+        	 else
+             {
+            	 inStr = inStr.substring(0, inStr.length() - 1);
+            	 tfDisplay.setText(inStr);
+             }
              break;
          // Clear button
          case "C":
@@ -132,7 +142,12 @@ public class JavaFXCalculator extends Application {
       tfDisplay.setText(result + "");
    }
 
-   // Setup the UI
+   private int len(String inStr2) {
+	// TODO Auto-generated method stub
+	return 0;
+}
+
+// Setup the UI
    @Override
    public void start(Stage primaryStage) {
       // Setup the Display TextField
