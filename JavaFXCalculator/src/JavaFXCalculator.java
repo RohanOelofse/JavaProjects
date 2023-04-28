@@ -13,18 +13,42 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
 public class JavaFXCalculator extends Application {
-   private TextField tfDisplay;    // display textfield
-   private TextField memoryText;   // display memory textfield
-   private Button[] btns;          // 16 buttons
+   /**
+    * Where the numbers that will be displayed on the calculator
+    */
+private TextField tfDisplay;    // display textfield
+   /**
+    * Where the memory numbers will be displayed
+    */
+private TextField memoryText;   // display memory textfield
+   /**
+    * The buttons on the calculator
+    */
+private Button[] btns;          // 16 buttons
    
    // For computation
-   private double result = 0.0;      // Result of computation
-   private double memory = 0.0;
-   private String inStr = "0";  // Input number as String
+   /**
+    * The result of the computation
+    */
+private double result = 0.0;      // Result of computation
+   /**
+    * The memory of the calculator
+    */
+private double memory = 0.0;
+   /**
+    * The text that will be displayed on the calculator
+    */
+private String inStr = "0";  // Input number as String
    // Previous operator: ' '(nothing), '+', '-', '*', '/', '='
-   private char lastOperator = ' ';
+   /**
+    * The last operator used
+    */
+private char lastOperator = ' ';
    // Event handler for all the 16 Buttons
-   EventHandler<ActionEvent> handler = evt -> {
+   /**
+    * This will receive input from all the buttons, then calculate the answer based on what operator they press
+    */
+EventHandler<ActionEvent> handler = evt -> {
       String currentBtnLabel = ((Button)evt.getSource()).getText();
       switch (currentBtnLabel) {
          // Number buttons
@@ -100,7 +124,6 @@ public class JavaFXCalculator extends Application {
         	 if(inStr.length() == 1) {
         		 inStr = "0";
         		 tfDisplay.setText(inStr);
-        		 
         	 }
         	 else
              {
@@ -121,7 +144,11 @@ public class JavaFXCalculator extends Application {
    // User pushes '+', '-', '*', '/' or '=' button.
    // Perform computation on the previous result and the current input number,
    // based on the previous operator.
-   private void compute() {
+   /**
+    * This will receive the operator pressed and calculate the answer from the last two numbers that were input
+    *  based on the operator the user pressed last.
+    */
+private void compute() {
       double inNum = Double.parseDouble(inStr);
       inStr = "0";
       if (lastOperator == ' ') {
@@ -142,13 +169,11 @@ public class JavaFXCalculator extends Application {
       tfDisplay.setText(result + "");
    }
 
-   private int len(String inStr2) {
-	// TODO Auto-generated method stub
-	return 0;
-}
-
 // Setup the UI
-   @Override
+   /**
+    *This function sets up all the buttons and sets the screen size up
+    */
+@Override
    public void start(Stage primaryStage) {
       // Setup the Display TextField
       tfDisplay = new TextField("0");
@@ -221,7 +246,11 @@ public class JavaFXCalculator extends Application {
       primaryStage.show();
    }
 
-   public static void main(String[] args) {
+   /**
+    * This starts the program and runs all the functions
+    * @param args
+    */
+public static void main(String[] args) {
       launch(args);
    }
 }
