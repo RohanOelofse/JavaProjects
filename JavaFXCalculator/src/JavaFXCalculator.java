@@ -105,7 +105,7 @@ public class JavaFXCalculator extends Application {
         	 else
              {
             	 inStr = inStr.substring(0, inStr.length() - 1);
-            	 tfDisplay.setText(inStr);
+            	 tfDisplay.setText(inStr); 
              }
              break;
          // Clear button
