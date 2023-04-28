@@ -1,7 +1,7 @@
 # JavaProjects
 <h2><b>All Java Projects for CSC160</b></h2>
 
-<ul>
+<ol>
   <li>1. InvoiceApp Assignmet - made the following changes</br>
   <p></p>
   </li>
@@ -24,4 +24,4 @@
   <li>7. JavaFX Calculator</br>
   <p>This program opens a UI to a working calculator that uses switch statements to perform calculations.</p>
   </li>
-</ul>
+</ol>
