@@ -2,26 +2,26 @@
 <h2><b>All Java Projects for CSC160</b></h2>
 
 <ol>
-  <li>1. InvoiceApp Assignmet - made the following changes</br>
+  <li>InvoiceApp Assignmet - made the following changes</br>
   <p></p>
   </li>
-  <li>2. HighLow App</br>
+  <li>HighLow App</br>
   <p></p>
   </li>
-  <li>3. Bank App</br>
+  <li>Bank App</br>
   <p></p>
   </li>
-  <li>4. BB_Scoreboard App</br>
+  <li>BB_Scoreboard App</br>
   <p></p>
   </li>
-  <li>5. TraficController App</br>
+  <li>TraficController App</br>
   <p></p>
   </li>
-  <li>6. ZooKeeper App</br>
+  <li>ZooKeeper App</br>
   <p>This program allows the user to create different animals with specific characteristics and then allows the user to output each animal 
   or a spesific property from the animal.</p>
   </li>
-  <li>7. JavaFX Calculator</br>
+  <li>JavaFX Calculator</br>
   <p>This program opens a UI to a working calculator that uses switch statements to perform calculations.</p>
   </li>
 </ol>
