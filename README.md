@@ -2,7 +2,7 @@
 <h2><b>All Java Projects for CSC160</b></h2>
 
 <ol>
-  <li>InvoiceApp Assignmet - made the following changes</br>
+  <li>InvoiceApp Assignmet</br>
   <p></p>
   </li>
   <li>HighLow App</br>
