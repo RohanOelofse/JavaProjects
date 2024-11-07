@@ -13,7 +13,7 @@
   <p></p>
   </li>
   <li>BB_Scoreboard App</br>
-  <p></p>
+  <p>This program allows the user to enter statistics for a each player in a basketbal game. </p>
   </li>
   <li>TraficController App</br>
   <p></p>
