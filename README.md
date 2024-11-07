@@ -8,8 +8,6 @@
 			 subtotal, discount percent, discount amount
 			  and invoice total.</p>
   </li>
-  <li>HighLow App</br>
-  <p></p>
   </li>
   <li>Bank App</br>
   <p></p>
