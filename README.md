@@ -3,7 +3,10 @@
 
 <ol>
   <li>InvoiceApp Assignmet</br>
-  <p></p>
+  <p>This program asks the user to input the 
+			 number of invoices the proceeds to calculate the
+			 subtotal, discount percent, discount amount
+			  and invoice total.</p>
   </li>
   <li>HighLow App</br>
   <p></p>
