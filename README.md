@@ -16,7 +16,7 @@
   <p>This program allows the user to enter statistics for a each player in a basketbal game. </p>
   </li>
   <li>TraficController App</br>
-  <p></p>
+  <p>This program manages a traffic light system in an intersection.</p>
   </li>
   <li>ZooKeeper App</br>
   <p>This program allows the user to create different animals with specific characteristics and then allows the user to output each animal 
